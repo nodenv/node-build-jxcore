@@ -22,7 +22,7 @@
     "posttest": "npm run lint",
     "lint": "git ls-files bin script **/*.*sh | xargs shellcheck",
     "verify-definitions": "scripty",
-    "publish:brew": "scripty",
+    "publish:brew": "brew-publish",
     "publish:github": "scripty",
     "preversion": "scripty",
     "postversion": "npm run publish:github && npm run publish:brew && npm publish"
