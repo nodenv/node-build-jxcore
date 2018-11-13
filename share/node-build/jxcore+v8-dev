@@ -7,4 +7,4 @@ after_install_package() {
 }
 
 install_git jxcore-dev "https://github.com/jxcore/jxcore.git" "master"
-install_package npm "https://s3.amazonaws.com/nodejx/npmjx310.tar.gz#3c8e1b1fed9be44c4ec6fd09e6978a29c3e466f684e2812f6762c0a6d28fb85c" jxcore_npm
+install_package npm "https://github.com/jxcore/jxcore/releases/download/v0.3.1.1/npmjx311.tar.gz#b0a696e01db4af87c2b6978453a01e4294951dd915d4770b559cab918a20c127" jxcore_npm
