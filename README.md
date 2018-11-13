@@ -1,6 +1,6 @@
 # node-build-jxcore
 
-[![Build Status](https://travis-ci.org/nodenv/node-build-jxcore.svg?branch=master)](https://travis-ci.org/nodenv/node-build-jxcore)
+[![Build Status](https://travis-ci.com/nodenv/node-build-jxcore.svg?branch=master)](https://travis-ci.com/nodenv/node-build-jxcore)
 
 node-build-jxcore is an [nodenv][] plugin (or more precisely, a [node-build][] plugin) that provides build definitions for jxcore.
 
