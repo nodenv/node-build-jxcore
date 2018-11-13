@@ -1,0 +1,39 @@
+{
+  "name": "@nodenv/node-build-jxcore",
+  "version": "0.0.1",
+  "description": "Install jxcore versions",
+  "homepage": "https://github.com/nodenv/node-build-jxcore#readme",
+  "license": "MIT",
+  "author": "Jason Karns <jason@karns.name> (http://jason.karns.name)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodenv/node-build-jxcore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nodenv/node-build-jxcore/issues"
+  },
+  "files": [
+    "share"
+  ],
+  "directories": {
+    "test": "./test"
+  },
+  "scripts": {
+    "posttest": "npm run lint",
+    "lint": "git ls-files bin script **/*.*sh | xargs shellcheck",
+    "verify-definitions": "scripty",
+    "publish:brew": "scripty",
+    "publish:github": "scripty",
+    "preversion": "scripty",
+    "postversion": "npm run publish:github && npm run publish:brew && npm publish"
+  },
+  "devDependencies": {
+    "bats": "^1.1.0",
+    "brew-publish": "^2.2.0",
+    "scripty": "^1.8.0"
+  },
+  "scripty": {
+    "path": "script",
+    "silent": true
+  }
+}
