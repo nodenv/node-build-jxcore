@@ -22,10 +22,11 @@
     "posttest": "npm run lint",
     "lint": "git ls-files bin script **/*.*sh | xargs shellcheck",
     "verify-definitions": "scripty",
-    "publish:brew": "brew-publish",
-    "publish:github": "scripty",
     "preversion": "scripty",
-    "postversion": "npm run publish:github && npm run publish:brew && npm publish"
+    "postversion": "npm publish",
+    "prepublishOnly": "npm run publish:github && npm run publish:brew",
+    "publish:brew": "brew-publish",
+    "publish:github": "scripty"
   },
   "devDependencies": {
     "bats": "^1.1.0",
