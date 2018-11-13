@@ -1,6 +1,6 @@
 {
   "name": "@nodenv/node-build-jxcore",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Install jxcore versions",
   "homepage": "https://github.com/nodenv/node-build-jxcore#readme",
   "license": "MIT",
