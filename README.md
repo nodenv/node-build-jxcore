@@ -82,11 +82,11 @@ If installed manually to `PREFIX=/some/path`, it would look something like:
 
 Both `nodenv install` and `node-build` accept a path to a custom definition file in place of a version name.
 
-    nodenv install /path/to/node-build-jxcore/share/node-build/8.0.0-rc.2
+    nodenv install /path/to/node-build-jxcore/share/node-build/jxcore+sm-0.3.1.1
 
 Or:
 
-    node-build /path/to/node-build-jxcore/share/node-build/8.0.0-rc.2 /dest/path/8.0.0-rc.2
+    node-build /path/to/node-build-jxcore/share/node-build/jxcore+sm-0.3.1.1 /dest/path/jxcore+sm-0.3.1.1
 
 
 
