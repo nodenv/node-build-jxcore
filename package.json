@@ -33,7 +33,7 @@
   "devDependencies": {
     "bats": "^1.1.0",
     "brew-publish": "^2.2.0",
-    "scripty": "^1.8.0"
+    "scripty": "^2.0.0-0"
   },
   "scripty": {
     "path": "script",
