@@ -31,12 +31,14 @@
     "publish:github": "scripty"
   },
   "devDependencies": {
+    "@nodenv/node-build-update-defs": "^2.8.0",
     "bats": "^1.1.0",
     "brew-publish": "^2.2.0",
     "scripty": "^2.0.0-0"
   },
   "scripty": {
-    "path": "script",
-    "silent": true
+    "modules": [
+      "@nodenv/node-build-update-defs"
+    ]
   }
 }
