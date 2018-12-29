@@ -1,2 +1,4 @@
 /node_modules
 /nodenv-node-build-jxcore-*.tgz
+/package-lock.json
+/yarn.lock
