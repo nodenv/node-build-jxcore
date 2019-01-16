@@ -4,6 +4,8 @@
 
 node-build-jxcore is an [nodenv][] plugin (or more precisely, a [node-build][] plugin) that provides build definitions for jxcore.
 
+<!-- toc -->
+
 ## Installation
 
 ### Installing with Homebrew (for OS X users)
