@@ -23,22 +23,16 @@
     "postinstall": "script/postinstall",
     "posttest": "npm run lint",
     "lint": "git ls-files bin script **/*.*sh | xargs shellcheck",
-    "verify-definitions": "scripty",
-    "preversion": "scripty",
+    "verify-definitions": "node_modules/@nodenv/node-build-update-defs/script/verify-definitions",
+    "preversion": "script/preversion",
     "postversion": "npm publish",
     "prepublishOnly": "npm run publish:github && npm run publish:brew",
     "publish:brew": "brew-publish",
-    "publish:github": "scripty"
+    "publish:github": "script/publish/github"
   },
   "devDependencies": {
     "@nodenv/node-build-update-defs": "^2.8.0",
     "bats": "^1.1.0",
-    "brew-publish": "^2.2.0",
-    "scripty": "^2.0.0-0"
-  },
-  "scripty": {
-    "modules": [
-      "@nodenv/node-build-update-defs"
-    ]
+    "brew-publish": "^2.2.0"
   }
 }
